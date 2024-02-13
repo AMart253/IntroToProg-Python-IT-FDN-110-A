@@ -1,6 +1,7 @@
 # ------------------------------------------------------------------------------------------ #
 # Title: Assignment05
 # Desc: This assignment demonstrates using dictionaries, files, and exception handling
+# Python 3.12.1
 # Change Log: (Who, When, What)
 #   RRoot,1/1/2030,Created Script
 #   Alan Martin, 2/10/2024, Created Script
@@ -26,7 +27,6 @@ FILE_NAME: str = "Enrollments.json"
 student_first_name: str = ''  # Holds the first name of a student entered by the user.
 student_last_name: str = ''  # Holds the last name of a student entered by the user.
 course_name: str = ''  # Holds the name of a course entered by the user.
-json_data: str = ''  # Holds json data
 menu_choice: str  # Hold the choice made by the user.
 student_data: dict = {}  # one row of student data
 students: list = []
@@ -46,9 +46,6 @@ except Exception as e:
 finally:
     print("Closing File")
     file.close()
-
-
-
 
 
 # Present and Process the data
